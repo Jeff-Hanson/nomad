@@ -7,6 +7,7 @@ import (
 )
 
 func TestE2E(t *testing.T) {
+	t.SkipNow()
 	framework.New().AddSuites(&framework.TestSuite{
 		Component:   "simple",
 		CanRunLocal: true,
